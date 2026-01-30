@@ -14,11 +14,10 @@
 }
 
 @theme {
-  /* Usamos ../img porque el CSS vive en src/ y debe subir un nivel */
     --background-image-wave-pattern: url('../img/wave-white.png');
     --background-image-wave-pattern-dots: url('../img/pattern-white-dots.png');
-    --background-image-pattern-characters-red: url('../img/pattern-characters-red.png'),
-    --background-image-character-mario: url('../img/character-l.png'),
-    --background-image-wave-pink: url('../img/wave-pink.png'),
-    --background-image-yellow-dots: url('../img/pattern-yellow-dots.png'),
+    --background-image-pattern-characters-red: url('../img/pattern-characters-red.png');
+    --background-image-character-mario: url('../img/character-l.png');
+    --background-image-wave-pink: url('../img/wave-pink.png');
+    --background-image-yellow-dots: url('../img/pattern-yellow-dots.png');
 }
