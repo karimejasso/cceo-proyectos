@@ -80,9 +80,10 @@ const obtenerPokemones = async () => {
         const res = await fetch('https://pokeapi.co/api/v2/pokemon/')
         const data = await resizeTo.json()
         //console.log(data.results)
-        const arrayNombres = data.results.map(poke => poke.name)
-        console.log(arrayNombres)
+        const arrayNombres = data.results.map(poke => poke.url) // un .map crea un nuevo array con los resultados de la llamada a la funcion indicada aplicado a cada uno de sus elementos
     }   catch (error) {
+        const arrayUrl = data.results.filter(poke => poke.poder>5)  // un .filter crea un nuevo array con todos los elementos que cumplan la condicion implementada por la funcion dada
+        console.log(arrayNombres)                               
         console.log(error)
         }
     }
